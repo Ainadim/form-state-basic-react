@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 import './App.css'
+import RefExample from './RefExample'
 
 function App() {
 
@@ -12,14 +13,12 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (password.length < 6 ) {
+    if (password.length < 6) {
       setError("Please provide the password with 6 or more character ")
     }
-    else{
+    else {
       console.log(nameInput, mail, password);
     }
-
-    
   }
 
   const handleNameinput = (e) => {
@@ -39,6 +38,7 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
+      <h2>UseState</h2>
       <form onSubmit={handleSubmit} action="">
         <input onChange={handleNameinput} type="text" name='Name' />
         <br />
@@ -52,6 +52,11 @@ function App() {
           error && <p>{error}</p>
         }
       </form>
+      <br />
+      <div>
+        <RefExample></RefExample>
+      </div>
+
     </>
   )
 }
