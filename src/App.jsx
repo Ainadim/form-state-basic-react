@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import './App.css'
 import RefExample from './RefExample'
+import ReusableForm from './components/ReusableForm/ReusableForm'
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <h2>UseState</h2>
+      {/* <h2>UseState</h2>
       <form onSubmit={handleSubmit} action="">
         <input onChange={handleNameinput} type="text" name='Name' />
         <br />
@@ -55,7 +56,9 @@ function App() {
       <br />
       <div>
         <RefExample></RefExample>
-      </div>
+      </div> */}
+
+      <ReusableForm></ReusableForm>
 
     </>
   )
