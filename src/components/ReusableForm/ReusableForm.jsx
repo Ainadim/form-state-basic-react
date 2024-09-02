@@ -18,12 +18,22 @@ const ReusableForm = props => {
             Here is the daynamic Form:
             <DaynamicForm 
             handleSubmit={signUpSubmit} 
-            formTitle = {"Sign Up"}></DaynamicForm>
+            formTitle = {"Sign Up"}>
+                <div>
+                    <h2>Sign Up</h2>
+                    <p>Sign Up</p>
+                    <p>Please Sign up right now</p>
+                </div>
+            </DaynamicForm>
            
             <DaynamicForm 
             handleSubmit={updateSubmit} 
             formTitle = {"Profile Update"} 
-            submitBtnTitle= {"Update"}></DaynamicForm>
+            submitBtnTitle= {"Update"}>
+                <div>
+                    <h2>Update your Profile</h2>
+                </div>
+            </DaynamicForm>
         </div>
 
         

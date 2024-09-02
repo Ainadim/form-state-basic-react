@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const DaynamicForm = ({handleSubmit, formTitle, submitBtnTitle ='Submit'}) => {
+const DaynamicForm = ({handleSubmit, formTitle, submitBtnTitle ='Submit', children}) => {
 
     const localDataSubmit = e => {
             e.preventDefault()
@@ -15,6 +15,7 @@ const DaynamicForm = ({handleSubmit, formTitle, submitBtnTitle ='Submit'}) => {
     return (        
         <div>
             <h1>{formTitle}</h1>
+            {children}
             <form onSubmit={localDataSubmit} action="">
                 <input type="text" name='name' />
                 <br />
